@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav input {
+  width: 200px;
+  height: 24px;
+  position: relative;
+  top: 8px;
+  border-radius: 15px;
+  border: 1px solid #e5e5ea;
+  background-image: url(img/Frame.png);
+  background-repeat: no-repeat;
+  background-size: 15px 14px;
+  background-position: left;
+}
+
+#Connect-Wallet {
+  background-color: rgba(0, 122, 255, 0.1215686275);
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #007aff;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  align-items: center;
+}
+
+.link img {
+  position: relative;
+}
+
+.link a {
+  position: relative;
+  top: -10px;
+  text-decoration: none;
+  color: black;
+}
+
+.hero__wrapper {
+  display: flex;
+  gap: 23px;
+}
+
+.hero__box {
+  width: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: 0px 19px 100px 0px rgba(0, 0, 0, 0.0666666667);
+  border-radius: 10px;
+}
+
+.hero__box h1 {
+  font-style: 28px;
+}
+
+.price-time {
+  gap: 24px;
+  display: flex;
+}
+
+.price-time h3 {
+  font-size: 24px;
+}
+
+.price-time h5 {
+  color: gray;
+  font-style: 16px;
+}
+
+.price-time img {
+  height: 50px;
+  width: 2px;
+  position: relative;
+  top: 10px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bts {
+  background-color: #007aff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+}
+
+.btn {
+  background-color: antiquewhite;
+  border: none;
+  padding: 12px;
+  border-radius: 18px;
+  color: #007aff;
+}
+
+.hero__num {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 9px;
+}
+
+.hero__img {
+  background-image: url(img/Rectangle\ 2.png);
+  width: 889px;
+  border-radius: 20px 20px 0 0;
+}
+
+.cards {
+  display: flex;
+  gap: 32px;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1.5px solid #e6e6e6;
+  box-shadow: 0px 20px 100px 0px #808080;
+  max-width: 314px;
+  border-radius: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.live {
+  margin: 90px 0;
+}
+
+.container {}
+
+.live_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  margin-top: 36px;
+}
+
+.live_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.live_card {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 415px; */
+}
+
+.live_card-img {
+  width: 100%;
+}
+
+.live_card-box {
+  border: 1px solid gray;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #8E8E93;
+    margin-top: auto;
+
+    b {
+      color: black;
+    }
+  }
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 1s;
+}
+
+.modal_box {
+  min-width: 400px;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input {
+    padding: 12px;
+    width: 400px;
+
+    border-radius: 20px;
+    border: 1 px solid lightgray;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  .close {
+    cursor: pointer;
+    width: max-content;
+    margin-left: auto;
+
+  }
+
+  .active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+body{
+ transition: 1s;
+}
+.dark{
+  background-color: black;
+  color: #fff;
+
+  *,a {
+    color: #fff;
+
+  }
+  button{
+    background-color: #fff;
+    color: black;
+  }
+  
+}
+
+.molnia{
+  cursor: pointer;
+}
